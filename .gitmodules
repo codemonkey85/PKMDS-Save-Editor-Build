@@ -1,0 +1,9 @@
+[submodule "externals/PKMDS"]
+	path = externals/PKMDS
+	url = git@github.com:codemonkey85/PKMDS.git
+[submodule "PKMDS-Images"]
+	path = PKMDS-Images
+	url = git@github.com:codemonkey85/PKMDS-Images.git
+[submodule "externals/PKMDS-Images"]
+	path = externals/PKMDS-Images
+	url = git@github.com:codemonkey85/PKMDS-Images
