@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A384CAE1-F072-489C-912B-B878F9B82DA1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PKMDS_Save_Editor</RootNamespace>
+    <AssemblyName>PKMDS-Save-Editor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>..\..\PKMDS-Save-Editor\PKMDS-Save-Editor\PKMDS-Save-Editor\dna-splicers.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\PKMDS-Save-Editor\PKMDS-Save-Editor\PKMDS-Save-Editor\frmMain.cs">
+      <Link>frmMain.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\PKMDS-Save-Editor\PKMDS-Save-Editor\PKMDS-Save-Editor\frmMain.designer.cs">
+      <Link>frmMain.designer.cs</Link>
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\PKMDS-Save-Editor\PKMDS-Save-Editor\PKMDS-Save-Editor\frmPKMViewer.cs">
+      <Link>frmPKMViewer.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\PKMDS-Save-Editor\PKMDS-Save-Editor\PKMDS-Save-Editor\frmPKMViewer.designer.cs">
+      <Link>frmPKMViewer.designer.cs</Link>
+      <DependentUpon>frmPKMViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\PKMDS-Save-Editor\PKMDS-Save-Editor\PKMDS-Save-Editor\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PKMDS-Save-Editor\PKMDS-Save-Editor\PKMDS-Save-Editor\Properties\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PKMDS-Save-Editor\PKMDS-Save-Editor\PKMDS-Save-Editor\Properties\Resources.Designer.cs">
+      <Link>Resources.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PKMDS-Save-Editor\PKMDS-Save-Editor\PKMDS-Save-Editor\Properties\Settings.Designer.cs">
+      <Link>Settings.Designer.cs</Link>
+    </Compile>
+    <EmbeddedResource Include="..\..\PKMDS-Save-Editor\PKMDS-Save-Editor\PKMDS-Save-Editor\frmMain.resx">
+      <Link>frmMain.resx</Link>
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\PKMDS-Save-Editor\PKMDS-Save-Editor\PKMDS-Save-Editor\frmPKMViewer.resx">
+      <Link>frmPKMViewer.resx</Link>
+      <DependentUpon>frmPKMViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\PKMDS-Save-Editor\PKMDS-Save-Editor\PKMDS-Save-Editor\Properties\Resources.resx">
+      <Link>Resources.resx</Link>
+    </EmbeddedResource>
+    <None Include="..\..\PKMDS-DB\veekun-pokedex.sqlite">
+      <Link>veekun-pokedex.sqlite</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\PKMDS-Save-Editor\PKMDS-Save-Editor\PKMDS-Save-Editor\app.config">
+      <Link>app.config</Link>
+    </None>
+    <None Include="..\..\PKMDS-Save-Editor\PKMDS-Save-Editor\PKMDS-Save-Editor\Properties\Settings.settings">
+      <Link>Settings.settings</Link>
+    </None>
+    <None Include="..\..\PKMDS-Save-Editor\PKMDS-Save-Editor\PKMDS-Save-Editor\Test-Save-White-2.sav">
+      <Link>Test-Save-White-2.sav</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\PKMDS-Save-Editor\PKMDS-Save-Editor\PKMDS-Save-Editor\dna-splicers.ico">
+      <Link>dna-splicers.ico</Link>
+    </Content>
+    <Content Include="..\PKMDS-Win32-DLL\Release\PKMDS-Win32-DLL.dll">
+      <Link>PKMDS-Win32-DLL.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PKMDS_CS\PKMDS_CS.csproj">
+      <Project>{8E70CFEC-312E-4B71-8496-996C7848166F}</Project>
+      <Name>PKMDS_CS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
